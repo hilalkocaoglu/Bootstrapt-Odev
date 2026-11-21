@@ -3,196 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hilal Kocaoğlu | Dijital CV & Portfolyo</title>
-    
+    <title>Hilal Kocaoğlu | Dijital CV</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            background-color: #f0f2f8;
+            color: #2b2d42;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Özel Lacivert-Mor Degrade Başlık Alanı */
+        .ust-banner {
+            background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 60%, #6d28d9 100%);
+            color: white;
+            padding: 75px 0;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .kart {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .kart:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(67, 56, 202, 0.12) !important;
+        }
+        .cizgi-mor { border-top: 4px solid #6d28d9; }
+        .cizgi-mavi { border-top: 4px solid #0284c7; }
+        .cizgi-yesil { border-top: 4px solid #059669; }
+        
+        .baslik-etiket {
+            color: #4338ca;
+            letter-spacing: 1px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    </style>
 </head>
-<body class="light-theme">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e1b4b;">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Hilal Kocaoğlu</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#hakkimda">Hakkımda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#egitim-deneyim">Eğitim & Staj</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projeler">Projelerim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#yetenekler">Yetenekler</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <button id="temaBtn" class="btn btn-outline-warning btn-sm">🌙 Gece Modu</button>
-                    </li>
-                </ul>
+            <a class="navbar-brand fw-bold" href="#">HK<span class="text-info">.</span></a>
+            <div class="d-flex gap-3">
+                <a class="nav-link text-white" href="#egitim">Eğitim & Staj</a>
+                <a class="nav-link text-white" href="#projeler">Projeler</a>
+                <a class="nav-link text-white" href="#yetenekler">Yetenekler</a>
+                <a class="nav-link text-white" href="#iletisim">İletişim</a>
             </div>
         </div>
     </nav>
 
-    <header id="hakkimda" class="py-5 text-center border-bottom">
+    <header class="ust-banner text-center shadow">
         <div class="container">
-            <p id="selamlamaMesaji" class="text-primary fw-semibold mb-1"></p>
-            <h1 class="display-5 fw-bold">Hilal Kocaoğlu</h1>
-            <p class="lead mb-4">Kayseri Üniversitesi • Bilgisayar Programcılığı Öğrencisi</p>
-            <p class="mx-auto" style="max-width: 650px;">
-                Yazılım geliştirme, veri yapıları, nesne tabanlı programlama ve veritabanı yönetimi alanlarında 
-                projeler geliştiren, öğrenmeye ve üretmeye odaklı bir geliştirici adayıyım.
+            <span class="badge bg-light text-dark mb-3 px-3 py-2 rounded-pill">Bilgisayar Programcısı Adayı</span>
+            <h1 class="display-4 fw-bold">Hilal Kocaoğlu</h1>
+            <p class="lead mb-3 opacity-75">Kayseri Üniversitesi • Bilgisayar Programcılığı Programı</p>
+            <p class="mx-auto mb-4" style="max-width: 600px;">
+                Nesne tabanlı programlama, veri yapıları, ilişkisel veritabanları ve modern web arayüzleri 
+                üzerine uygulamalar geliştiren, öğrenmeye ve üretmeye odaklı bir yazılım öğrencisiyim.
             </p>
-            <div class="mt-4">
-                <a href="#projeler" class="btn btn-primary me-2">Projelerimi İncele</a>
-                <a href="#iletisim" class="btn btn-outline-secondary">İletişime Geç</a>
+            <div class="d-flex justify-content-center gap-2">
+                <a href="https://github.com/hilalkocaoglu" target="_blank" class="btn btn-light fw-semibold px-4 rounded-pill">
+                    GitHub Profilim
+                </a>
+                <a href="#iletisim" class="btn btn-outline-light px-4 rounded-pill">
+                    Bana Ulaş
+                </a>
             </div>
         </div>
     </header>
 
-    <section id="egitim-deneyim" class="py-5">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-4">Eğitim & Staj Deneyimi</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <span class="badge bg-primary mb-2">Eğitim</span>
-                            <h5 class="card-title">Kayseri Üniversitesi</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Bilgisayar Programcılığı (Önlisans)</h6>
-                            <p class="card-text mt-3">
-                                Nesne Tabanlı Programlama, Veri Yapıları, Veritabanı Yönetim Sistemleri, 
-                                İnternet Programcılığı ve Bilgisayar Ağ Sistemleri üzerine uygulamalı eğitim.
-                            </p>
-                        </div>
+    <section id="egitim" class="container my-5 pt-3">
+        <p class="text-center baslik-etiket mb-1">Kariyer & Akademik</p>
+        <h3 class="fw-bold text-center mb-4">Eğitim ve Deneyim</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card kart shadow-sm p-4 h-100 cizgi-mor">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="badge" style="background-color: #4338ca;">Üniversite Eğitimi</span>
+                        <small class="text-muted">Kayseri</small>
                     </div>
+                    <h5 class="fw-bold">Kayseri Üniversitesi</h5>
+                    <p class="text-muted mb-2">Bilgisayar Programcılığı (Önlisans)</p>
+                    <p class="small mb-0">
+                        Nesne Tabanlı Programlama (C#), Veri Yapıları (C), Veritabanı Yönetim Sistemleri (SQL), 
+                        İnternet Programcılığı ve Bilgisayar Ağ Sistemleri alanlarında uygulamalı eğitim.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <span class="badge bg-success mb-2">Yaz Stajı • 2026</span>
-                            <h5 class="card-title">Teknolojiport Yazılım</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Erciyes Teknopark — Yazılım Geliştirme Stajyeri</h6>
-                            <p class="card-text mt-3">
-                                30 iş günü süren zorunlu yaz stajı kapsamında yazılım geliştirme süreçleri, 
-                                ekip içi proje takibi ve kurumsal uygulama geliştirme pratikleri üzerine çalıştım.
-                            </p>
-                        </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card kart shadow-sm p-4 h-100 cizgi-yesil">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="badge bg-success">Yaz Stajı • 2026</span>
+                        <small class="text-muted">Erciyes Teknopark</small>
                     </div>
+                    <h5 class="fw-bold">Teknolojiport Yazılım</h5>
+                    <p class="text-muted mb-2">Yazılım Geliştirme Stajyeri</p>
+                    <p class="small mb-0">
+                        30 iş günü süren zorunlu yaz stajı boyunca yazılım geliştirme yaşam döngüsü, 
+                        ekip içi proje takibi ve kurumsal yazılım pratikleri üzerine aktif deneyim.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projeler" class="py-5 border-top border-bottom">
-        <div class="container">
-            <h2 class="text-center fw-bold mb-3">Projelerim</h2>
-            <p class="text-center text-muted mb-4">Kategori seçerek projeleri filtreleyebilirsiniz:</p>
-
-            <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
-                <button class="btn btn-primary btn-sm filtre-btn" data-kategori="hepsi">Tümü</button>
-                <button class="btn btn-outline-primary btn-sm filtre-btn" data-kategori="csharp">C#</button>
-                <button class="btn btn-outline-primary btn-sm filtre-btn" data-kategori="c">C / Veri Yapıları</button>
-                <button class="btn btn-outline-primary btn-sm filtre-btn" data-kategori="sql">SQL / Veritabanı</button>
+    <section id="projeler" class="container my-5 pt-3">
+        <p class="text-center baslik-etiket mb-1">Geliştirdiklerim</p>
+        <h3 class="fw-bold text-center mb-4">Öne Çıkan Projeler</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card kart shadow-sm p-4 h-100 cizgi-mor">
+                    <span class="badge bg-primary w-25 mb-2">C#</span>
+                    <h5 class="fw-bold">Adam Asmaca Oyunu</h5>
+                    <p class="text-muted small mb-0">
+                        C# WinForms ve OOP prensipleriyle geliştirilen; kelime havuzu, hak kontrolü ve 
+                        dinamik arayüz içeren masaüstü oyun projesi.
+                    </p>
+                </div>
             </div>
-
-            <div class="row g-4" id="projeListesi">
-                <div class="col-md-4 proje-karti" data-kategori="csharp">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <span class="badge bg-info text-dark mb-2">C# WinForms</span>
-                            <h5 class="card-title">Adam Asmaca Oyunu</h5>
-                            <p class="card-text">
-                                Nesne tabanlı programlama mantığıyla geliştirilen, kelime havuzu ve can kontrolü 
-                                içeren masaüstü oyun uygulaması.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+                <div class="card kart shadow-sm p-4 h-100 cizgi-mavi">
+                    <span class="badge bg-info text-dark w-25 mb-2">C</span>
+                    <h5 class="fw-bold">Sinema Rezervasyon Sistemi</h5>
+                    <p class="text-muted small mb-0">
+                        Çok seviyeli bağlı listeler (Multi-level Linked List) veri yapısı kullanılarak 
+                        kodlanan salon, seans ve koltuk takip otomasyonu.
+                    </p>
                 </div>
-
-                <div class="col-md-4 proje-karti" data-kategori="c">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <span class="badge bg-warning text-dark mb-2">C Programlama</span>
-                            <h5 class="card-title">Sinema Rezervasyon Sistemi</h5>
-                            <p class="card-text">
-                                Çok seviyeli bağlı listeler (Multi-level Linked List) veri yapısı kullanılarak 
-                                geliştirilen salon, seans ve koltuk takip sistemi.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 proje-karti" data-kategori="sql">
-                    <div class="card h-100 shadow-sm custom-card">
-                        <div class="card-body">
-                            <span class="badge bg-secondary mb-2">T-SQL / MSSQL</span>
-                            <h5 class="card-title">İlişkisel Veritabanı Tasarımı</h5>
-                            <p class="card-text">
-                                SQL Server Management Studio üzerinde tablolar, ilişkiler, kısıtlamalar ve 
-                                sorgu optimizasyonları içeren veritabanı projesi.
-                            </p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card kart shadow-sm p-4 h-100 cizgi-yesil">
+                    <span class="badge bg-success w-25 mb-2">T-SQL</span>
+                    <h5 class="fw-bold">İlişkisel Veritabanı Tasarımı</h5>
+                    <p class="text-muted small mb-0">
+                        SQL Server Management Studio üzerinde oluşturulan tablolar, anahtar ilişkileri 
+                        ve gelişmiş sorgu senaryoları.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="yetenekler" class="py-5">
-        <div class="container" style="max-width: 750px;">
-            <h2 class="text-center fw-bold mb-4">Teknik Yetenekler</h2>
+    <section id="yetenekler" class="container my-5 pt-3" style="max-width: 720px;">
+        <p class="text-center baslik-etiket mb-1">Teknolojiler</p>
+        <h3 class="fw-bold text-center mb-4">Teknik Yetenekler</h3>
+        <div class="card kart shadow-sm p-4">
+            <div class="d-flex justify-content-between mb-1 fw-semibold"><span>C & C# Programlama</span><span>85%</span></div>
+            <div class="progress mb-3" style="height: 8px;"><div class="progress-bar" style="width: 85%; background-color: #4338ca;"></div></div>
+
+            <div class="d-flex justify-content-between mb-1 fw-semibold"><span>HTML5, CSS3 & Bootstrap 5.3</span><span>80%</span></div>
+            <div class="progress mb-3" style="height: 8px;"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+
+            <div class="d-flex justify-content-between mb-1 fw-semibold"><span>SQL Server (T-SQL)</span><span>80%</span></div>
+            <div class="progress mb-3" style="height: 8px;"><div class="progress-bar bg-success" style="width: 80%"></div></div>
+
+            <div class="d-flex justify-content-between mb-1 fw-semibold"><span>JavaScript (Temel DOM)</span><span>60%</span></div>
+            <div class="progress" style="height: 8px;"><div class="progress-bar bg-warning" style="width: 60%"></div></div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="container my-5 pt-3" style="max-width: 520px;">
+        <p class="text-center baslik-etiket mb-1">Mesaj Bırak</p>
+        <h3 class="fw-bold text-center mb-4">İletişime Geç</h3>
+        <div class="card kart shadow-sm p-4 cizgi-mor">
+            <input type="text" id="ad" class="form-control mb-3" placeholder="Adınız Soyadınız">
+            <textarea id="mesaj" class="form-control mb-3" rows="3" placeholder="Mesajınız..."></textarea>
+            <button class="btn text-white w-100 fw-semibold" style="background-color: #4338ca;" onclick="gonder()">
+                Mesajı Gönder
+            </button>
             
-            <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>C & C# Programlama</span><span>85%</span></div>
-                <div class="progress"><div class="progress-bar bg-primary" style="width: 85%"></div></div>
-            </div>
-
-            <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>HTML5 & CSS3 & Bootstrap 5.3</span><span>80%</span></div>
-                <div class="progress"><div class="progress-bar bg-success" style="width: 80%"></div></div>
-            </div>
-
-            <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>SQL Server (T-SQL)</span><span>80%</span></div>
-                <div class="progress"><div class="progress-bar bg-info" style="width: 80%"></div></div>
-            </div>
-
-            <div class="mb-3">
-                <div class="d-flex justify-content-between"><span>JavaScript (Temel DOM & Etkileşim)</span><span>60%</span></div>
-                <div class="progress"><div class="progress-bar bg-warning" style="width: 60%"></div></div>
-            </div>
+            <p id="bilgi" class="mt-3 text-center fw-bold mb-0"></p>
         </div>
     </section>
 
-    <section id="iletisim" class="py-5 border-top">
-        <div class="container" style="max-width: 600px;">
-            <h2 class="text-center fw-bold mb-4">İletişime Geç</h2>
-            
-            <form id="iletisimFormu" class="card p-4 shadow-sm custom-card">
-                <div class="mb-3">
-                    <label for="adSoyad" class="form-label">Adınız Soyadınız</label>
-                    <input type="text" class="form-control" id="adSoyad" placeholder="Örn: Ahmet Yılmaz">
-                </div>
-                <div class="mb-3">
-                    <label for="eposta" class="form-label">E-posta Adresiniz</label>
-                    <input type="email" class="form-control" id="eposta" placeholder="ornek@mail.com">
-                </div>
-                <div class="mb-3">
-                    <label for="mesaj" class="form-label">Mesajınız</label>
-                    <textarea class="form-control" id="mesaj" rows="3" placeholder="Mesajınızı buraya yazın..."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Mesajı Gönder</button>
-            </form>
-
-            <div id="formSonuc" class="mt-3"></div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <small>&copy; 2026 Hilal Kocaoğlu • İnternet Programcılığı Dersi Projesi</small>
-        </div>
+    <footer class="text-white text-center py-4 mt-5" style="background-color: #1e1b4b;">
+        <small>Hilal Kocaoğlu &copy; 2026 • Kayseri Üniversitesi Bilgisayar Programcılığı</small>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function gonder() {
+            let ad = document.getElementById("ad").value;
+            let mesaj = document.getElementById("mesaj").value;
+
+            if (ad == "" || mesaj == "") {
+                document.getElementById("bilgi").style.color = "#dc2626";
+                document.getElementById("bilgi").innerText = "Lütfen tüm alanları doldurun!";
+            } else {
+                document.getElementById("bilgi").style.color = "#059669";
+                document.getElementById("bilgi").innerText = "Teşekkürler " + ad + ", mesajınız alındı!";
+            }
+        }
+    </script>
+
 </body>
 </html>
